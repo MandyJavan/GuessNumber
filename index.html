@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login">
+        <h3 id="loginText">Please login first:</h3>
+        <label for="username">Username:</label>
+        <input type="text" id="username" minlength="5" maxlength="20" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" minlength="3" maxlength="20" required>
+        <button type="submit" id="loginBtn" onclick="show()">Login</button>
+    </div>
+    <script src="login.js"></script>
+    <div id="container1">
+        <h1 id="title">Guess The Number...</h1>
+        <button id="startBtn">Start</button>
+        <br>
+        <div id="container2">
+            <h2 id="timer">60</h2>
+            <label for="number">Your guess:</label>
+            <input type="number" id="number" name="number">
+            <br>
+            <button type="submit" value="Check" id="check">Check</button>
+            <p id="score">Score: <span id="points">0</span></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
